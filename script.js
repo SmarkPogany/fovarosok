@@ -30,7 +30,7 @@ function generateQuestion () {
 
 form.onsubmit = function(e) {
     e.preventDefault();
-    if (userResponse.value === kerdesOrszag.varos) {
+    if (userResponse.value.toLowerCase() === kerdesOrszag.varos.toLowerCase()) {
         valasz.innerHTML = "Helyes";
         helyesDb++
     }
